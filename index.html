@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+<title>F1 help</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3.css">
+<link rel="stylesheet" href="/google-raleway.css">
+<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+<!-- <link href="/css/fontawesome.css" rel="stylesheet">
+  <link href="/css/brands.css" rel="stylesheet">
+  <link href="/css/solid.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+
+}
+
+.material-symbols-outlined {
+  font-size: 1rem;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+i { font-size: 1rem;}
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/nikolay-u76CN5rZeOU-unsplash.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">
+      <img src="f1.v4.svg" width="30" alt="Press F1 for Help" title="Press F1 for Help service">
+    </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#services" class="w3-bar-item w3-button">Services</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="material-symbols-outlined">contact_support</i> About</a>
+      <!-- <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a> -->
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="material-symbols-outlined">attach_money</i> Pricing</a>
+      <a href="#terms" class="w3-bar-item w3-button"><i class="material-symbols-outlined">contract</i> Terms</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="material-symbols-outlined">email</i> Contact</a>
+      
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">Services</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <!-- <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a> -->
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Pricing</a>
+  <a href="#terms" class="w3-bar-item w3-button">Terms</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small"><strong>Press F1 for Help</strong></span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium"><strong>Press F1 for Help</strong></span><br>
+    <span class="w3-large">We're here to help you with Computers</span>
+    <p><a href="#services" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">What we can do for you</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i>Photo by <a href="https://unsplash.com/@beautyoftech?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nikolay</a> on 
+      <a href="https://unsplash.com/photos/turned-on-macbook-pro-u76CN5rZeOU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </i>
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+  </div>
+</header>
+
+<!-- Services Section -->
+<div class="w3-container" style="padding:128px 16px" id="services">
+  <h3 class="w3-center">Services</h3>
+  <p class="w3-center w3-large">Key service offerings</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter w3-padding">
+      <i class="material-symbols-outlined w3-margin-bottom w3-jumbo w3-center">devices</i>
+      <p class="w3-large">Advice, guidance and tuition</p>
+      <p>
+        We can provide advice, guidance in product selection and assistance when making purchases 
+        to fit your requirements and budget with post-purchase guidance and training in using your new technology 
+        tailored to your needs including ergonomics and assistive technologies
+      </p>
+      <p>
+        There are many choices and evaluations to make when identifying and selecting suitable equipment, 
+        software, licensing and subscriptions and contracted services 
+        and it's usage with existing equipment and facilities 
+        so as to fit into your usage and budgetary requirements
+
+      </p>
+      <p>We can help you stay in control of all of it</p>
+    </div>
+    <div class="w3-quarter w3-padding">
+      <i class="material-symbols-outlined w3-margin-bottom w3-jumbo">settings</i>
+      <p class="w3-large">Setup & configuration</p>
+      <p>
+        New or old equipment, we can help: 
+      </p>
+      <p>    with all aspects of personalisation, connectivity, integration, 
+            installation and configuration, helping you to better
+            understand and manage your electronics. 
+          </p>
+          <p>
+            data transfers, backups and file management e.g organise your photos and documents 
+            to eliminate or avoid duplicated files, save storage space
+          </p>
+          <p>
+            optimise, speed up, renovate or update older equipment (if possible)
+            or reset to factory configuration then rebuild clean
+          </p>
+          <p>
+            We can help you get exactly what you want
+          </p>
+    </div>
+    <div class="w3-quarter w3-padding">
+      <i class="material-symbols-outlined w3-margin-bottom w3-jumbo">contact_support</i>
+      <p class="w3-large">Problems, problems, problems</p>
+      <p>
+        Computers are sophisticated, complex machines and are generally very reliable. Operating systems do alot to remove complexity 
+        simplifying down to a few choices in mostly logical and intuitive ways, but inevitably things can and will go wrong.
+        Some errors can be as simple to fix as restarting the device. However a good many problems come about
+        through having made a choice or sequence of choices (changes to a configuration) that may have solved one problem
+        but has colateral and quite unintended consequences for something else
+        or it could be a permanent or intermitent hardware fault 
+        or it could be a multitude of other possibilities too
+        We can help here too but we also need your help as well. It's very helpful to know any error messages, a photo of the screen 
+        at point of failure/error is incredibly useful as well, and a clear recollection of what was being used/done at the time. Any details
+        about what appeared on screen and the sequence of events can prove useful - all can reduce service costs and time
+      </p>
+    </div>
+    <div class="w3-quarter w3-padding">
+      <i class="material-symbols-outlined w3-margin-bottom w3-jumbo">heart_broken</i>
+      <p class="w3-large">Break-fix, Second life and disposal</p>
+      <p >
+        Electronic devices and components fail or get broken, are superceeded by new technology, become surplus to requirements
+        or unfit for purpose and should be disposed of or replaced. 
+        They should not be disposed of in normal rubbish because they contain toxins and they contain many valuable
+        materials in small quantities, so they need recycling and not in typical household recycling facilities. 
+        Not many facilities exist for the disposal of electronics but sometimes equipment can be re-purposed, 
+        gifted and used by less affluent or put to use in less demanding functions. We'll advise on options and help where possible. 
+        We offer a limited break-fix service, typically component replacement or upgrades like power supplies, hard drives and memory. 
+        We can also recover data in a few circumstances although this can quickly become a highly complex task best dealt with by specialist services.  
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "Technophiles know tech" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="about">
+  
+  <h3 class="w3--center"><img src="f1.v4.svg" width="30" alt="Press F1 for Help" title="Press F1 for Help service"> Press F1 for Help</h3>
+  <p class="w3--center w3-large">Motivation</p>
+  <div class="w3-row-padding">
+    <h4>Technophiles know quite a lot about tech and it's great to share that joy</h4>
+    <div class="w3-col m6">
+      <p><strong>Press F1 for Help</strong> wants to help people with impartial advice, knowledge and assistance
+        when purchasing or using computers, peripherals and electronics.
+      </p>
+      <p>
+        Computers are hugely capable and sophisticated devices and using one safely and effectively in the current day
+        requires a reasonably broad level of knowledge and a good deal of common sense.
+      </p>
+      <p>
+        There are so many devices to choose from, and all are built, produced or optimised for different purposes
+        so making informed choices in the marketplace can be daunting. No-one wants to throw money away and everyone wants value for money. 
+        In Information Technology you get what you pay for, but it may not always be the best or even a good choice for you
+      </p>
+      <p>
+        When looking to make purchases, <strong>Press F1 for Help</strong> can explain the pros and cons in frank, impartial and plain language, 
+        de-mystifying complex topics, guiding you through the process of selection and purchase, eliminating confusion or frustration 
+        and putting you back in control of what’s best for you and what you want to do.       
+      </p>
+      <p>
+        And it doesn’t always end at hardware purchases and guarantees.
+        There’s email, photos, data transfers, printers, inks, licenses, subscriptions, fibre or internet providers, 
+        phone usage, virus, scam avoidance, privacy and protection issues.
+      </p>
+      <p>
+        Sadly, there’s more and more bad actors out there, so staying safe is more and more important 
+        and there’s many that just want your money whether it’s good for you or not -
+        <strong>Caveat Emptor</strong> has never been more relevant, or in plain language - Let the Buyer beware.
+      </p>
+      <p>
+        <strong>Press F1 for Help</strong> can de-mystify and reduce the complexity to simple straight forward ‘maxims’ and procedures.
+        Advice and assistance is just a phone/video/internet call, email or in-person visit away if and when you may need that. 
+      </p>
+      <p>Happy computing =)</p>
+
+      <!-- <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th">&nbsp;</i> View Our Works</a></p> -->
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/david-boca-wh7ruevEmrY-unsplash.jpg" alt="have a coffee. please don't spill it" style="margin-top: 1.5rem;">
+      <p class="w3-right-align" style="font-size: 0.7rem; ">
+        Photo by <a href="https://unsplash.com/@davidboca?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">David Boca</a> on 
+        <a href="https://unsplash.com/photos/coffee-filled-mug-by-laptop-wh7ruevEmrY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>  
+      </p>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<!-- <div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Anja Doe</h3>
+          <p class="w3-opacity">Art Director</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Dan Star</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Promo Section "Statistics" -->
+<!-- <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div> -->
+
+<!-- Work Section -->
+<!-- <div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div> -->
+
+<!-- Modal for full size images on click-->
+<!-- <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div> -->
+
+<!-- Skills Section -->
+<!-- <div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <!-- <h3>Pricing</h3> -->
+  <!-- <p class="w3-large">Services pricing </p> -->
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section"></div>
+    <div class="w3-third w3-section">
+        <!-- <table class="w3-left-align">
+            <tr>
+                <td>Service</td>
+                <td></td>
+                <td class="w3-right-align">Hourly</td>
+                <td class="w3-right-align">Hourly+GST</td>
+            </tr>
+            <tr>
+                <td>At workshop</td>
+                <td>Any service provided</td>
+                <td class="w3-right-align">90.00</td>
+                <td class="w3-right-align">103.50</td>
+            </tr>
+            <tr>
+                <td>On-site</td>
+                <td>Any service provided</td>
+                <td class="w3-right-align">100.00</td>
+                <td class="w3-right-align">115.00</td>
+            </tr>
+            <tr>
+                <td>Minimum charge</td>
+                <td>30 minutes</td>
+                <td class="w3-right-align">45.00</td>
+                <td class="w3-right-align">51.75</td>
+            </tr>
+            <tr>
+                <td>Techie time</td>
+                <td>charged in 15min intervals or part thereof</td>
+                <td class="w3-right-align"></td>
+                <td class="w3-right-align"></td>
+            </tr>
+            <tr>
+                <td>Travel</td>
+                <td>charged per kilometer</td>
+                <td class="w3-right-align">1.00</td>
+                <td class="w3-right-align">1.15</td>
+            </tr>
+            <tr>
+                <td>Assignments/Projects</td>
+                <td></td>
+                <td class="w3-right-align">negotiable</td>
+                <td class="w3-right-align"></td>
+            </tr>
+        </table> -->
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Services pricing</li>
+        <li class="w3-padding-16">
+          <strong>
+          <span class="w3-left-align w3-span-wide">Service</span>
+          <span class="w3-right-align w3-span-col">Hourly</span>
+          <span class="w3-right-align w3-span-col">+ GST</span>
+        </strong>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-left-align w3-span-wide">Any service at base</span>
+          <span class="w3-right-align w3-span-col">90.00</span>
+          <span class="w3-right-align w3-span-col">103.50</span>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-left-align w3-span-wide">Any service on client site</span>
+          <span class="w3-right-align w3-span-col">100.00</span>
+          <span class="w3-right-align w3-span-col">115.00</span>
+        </li>
+        <li class="w3-padding-16 ">
+          <strong>
+            <span class="w3-left-align w3-span-wide">Chargeout policies</span>
+            <span class="w3-right-align w3-span-col">&nbsp;</span>
+            <span class="w3-right-align w3-span-col">&nbsp;</span>
+          </strong>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-left-align w3-span-wide">Minimum </span>
+          <span class="w3-right-align w3-span-col">&nbsp;</span>
+          <span class="w3-right-align w3-span-col">30 mins</span>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-left-align w3-span-wide">Techie time intervals</span>
+          <span class="w3-right-align w3-span-col">&nbsp;</span>
+          <span class="w3-right-align w3-span-col">15 mins</span>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-left-align w3-span-wide">Travel time intervals</span>
+          <span class="w3-right-align w3-span-col">+ km charge</span>
+          <span class="w3-right-align w3-span-col">15 mins</span>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-left-align w3-span-wide">Projects/Assignments</span>
+          <span class="w3-right-align w3-span-col">&nbsp;</span>
+          <span class="w3-right-align w3-span-col">negotiated</span>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section"></div>
+    <!-- <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div> -->
+  </div>
+</div>
+
+<!-- Terms section -->
+<div class="w3-container w3-white w3-padding-64" id="terms">
+  <div class="w3-row-padding">
+    <h3>Terms & Conditions</h3>
+  </div>
+    <div class="w3-row-padding" style="font-size: 0.7rem;">
+        
+    <p>This document sets out the terms and conditions upon which Press F1 for Help Limited, trading as F1Help, will provide you Services and/or Products.</p>
+  
+    <p>By using any of our services and/or products, you agree to be bound by these Terms and Conditions.</p>
+  
+    <div class="w3-col m6">
+
+      1. DEFINITIONS
+      <ol>
+        <li>In these Terms and Conditions:    
+            <p>"Cancellation Fee" means a fee of $60.00 inc GST for cancelling an On-site Visit other than in accordance with clause 2.2; and which is intended to 
+              recompense us for our reasonable costs incurred in responding to your On-site Visit which you have not cancelled in reasonably adequate time. 
+            </p> 
+            <p>"Fees" means, for each On-site Visit, the applicable Minimum Fees plus the applicable Incremental Fee set out below plus any Product Fee: 
+              All prices are inclusive of GST	Minimum Fees	Incremental Fee*
+              Callout Fee for ALL On-site Visits	$25.00	
+              Minimum On-site Rate of 1 Hour – within the Region – Home Users	$159.00	$39.75 /quarter hour
+              Minimum On-site Rate of 1 Hour – within the Region – Business Users	$159.00	$39.75 /quarter hour
+              Minimum Same Day On-site Rate of 1 Hour – within the Region – All Users 	$159.00	 $39.75 /quarter hour
+              Minimum On-site Rate of 1 Hour – Outside the Region – All Users 	$248.00	$124.00 / half hour
+              Minimum Same Day On-site Rate of 1 Hour – Outside the Region – All Users 	$248.00	$124.00 / half hour
+              Minimum Offsite Rate of 1 Hour 	$159.00	$39.75 /quarter hour
+              Minimum On-site Rate of 1 Hour – within the Region – Gold Card Users 	$143.10	$35.78 /quarter hour
+              Minimum On-site Rate of 1 Hour – within the Region – Geek Plus Members 	$127.20 	$31.80 /quarter hour 
+              
+              *The Incremental Fee applies for each stated period after the first hour of the On-site Visit. The period of each On-site Visit within the Region will 
+              commence from the time we arrive at your premises. The period for each On-site Visit outside the Region includes our travel time. Minimum On-site Visit Fees 
+              outside Working Hours will apply where any of the first hour of the On-site Visit is outside Working Hours. Incremental Fees outside Working Hours will apply 
+              where any of the applicable period for that Incremental Fee is outside Working Hours;</p> 
+            
+            <p>"Information" has the meaning given to that term in clause 6.2;</p>
+            
+            <p>"On-site Visit" means a single on-site visit made by us for the purpose of providing Services and/or Products; </p>
+            
+            <p>"No Show Fee" means a fee of $152 inc GST for non-attendance by the customer at an On-site Visit which results in our technician not being able to execute the 
+              On-site Visit as booked.</p> 
+            
+            <p>"Products" means any hardware, software or other products provided by us and for clarification, it is important to note clause 5.8 of these Terms and Conditions 
+              relating to the purchase of software;</p>
+            
+            <p>"Product Fees" means the fees or cost quoted by us for any Product purchased by you;</p>
+            
+            <p>"Services" means the on-site or workshop computer maintenance, support and/or consulting services reasonably requested by you and provided by us; </p>
+            
+            <p>"Terms and Conditions" means these terms and conditions;</p>
+            
+            <p>"we", "us" or "our" means the company detailed above trading as Geeks on Wheels;</p>
+            
+            <p>"Working Day" means any day other than a Sunday, a statutory public holiday in the Region or a Saturday in relation to which the previous Friday 
+              or following Monday is a statutory public holiday in the Region;</p>
+            
+            <p>"Working Hours" means 8am to 8:30pm on any Working Day; and</p>
+            
+            <p>"you" or "your" means the customer its agent and employees or any person acting on behalf of and with the authority of the customer 
+              that requested the Call Out.
+            </p>
+          
+        </li>
+
+      </ol>
+
+      2. ON-SITE VISITS
+      <ol>
+        <li>
+          <p>Where you arrange an On-site Visit, we will attend the premises for that On-site Visit during the arranged time bracket.</p>
+        </li>
+        <li>
+          <p>To cancel or stop an On-site Visit, you must advise one of our telephone operators before the end of the last Call Centre Hour on the 
+            previous Working Day. If you cancel an On-site Visit other than in accordance with this clause 2.2, you must pay a Cancellation Fee for 
+            that On-site Visit. If you fail to cancel an On-site Visit and you do not attend the On-site Visit during the arranged time bracket and 
+            location you must pay a No Show Fee for the On-site Visit.</p>
+        </li>
+      </ol>
+      
+      3. SERVICES
+      <ol>
+        <li>In consideration of the Fees, we will perform the Services in accordance with these Terms and Conditions.</li>
+        <li>
+          At the beginning of the On-site Visit:
+          <p>(a) we will try to diagnose any problem described by you; and</p>
+          <p>(b) we may provide an estimate of the time required to provide any Services.</p>
+          <p>However, we do not guarantee any diagnosis or estimate of time will be accurate.</p>
+        </li>
+        <li>The duration of the On-site Visit will be agreed with you. If the Services are not complete within that duration, we will discuss the 
+          options available, which may include extending that On-site Visit, arranging another On-site Visit or abandoning the Services. You may 
+          stop an On-site Visit at any time subject to clause 2.2.
+        </li>
+        <li>Regardless of clauses 3.2 or 3.3, once an On-site Visit commences, you must pay the Fees for that On-site Visit, including the 
+          Minimum Callout and On-site Visit Fee.</li>
+          <li>To enable us to undertake the Services:
+            <p>(a) you must provide us with all information, assistance, co-operation and access to premises and equipment that we may reasonably 
+              require to undertake the Services; and</p>
+            <p>(b) you, or some person over 16 yrs, must be present while we provide the Services.</p>
+          </li>
+          <li>We will use reasonable endeavours to achieve the objectives of the Services but we provide no guarantee, express or implied that the 
+            objective will be achieved and we will not be liable for any failure to meet the objectives provided we have used our reasonable endeavours.</li>
+      </ol>
+      
+      4. PRODUCT OWNERSHIP AND RISK
+      <ol>
+        <li>Where agreed with you, we will provide Products as part of an On-site Visit and subject to these Terms and Conditions.</li>
+        <li>Ownership of products remains with us until payment is made in full from cleared funds for the Products.</li>
+        <li>We supply the Products to you on condition that we have a purchase money security interest (as defined by the Personal Property 
+          Security Act 1999) in the Products.</li>
+        <li>If you fail to make payment in whole or part for the Products you have ordered, we may re-possess and re-sell or retain the Products 
+          and may for that purpose enter upon your premises or any other premises upon which the Products are situated at any time and without notice 
+          and without being in any way liable to you or any other person or entity.</li>
+        <li>The risk of any loss or damage to any of the Products sold, or deterioration of the Products, due to any cause whatsoever shall pass 
+          to you upon delivery of the Products. If the Products remain in our possession owing only to the failure by you to accept the Products at 
+          your request, such Products shall be at your risk.</li>
+      </ol>
+    
+      5. PAYMENT
+        <ol>
+          <li>We will invoice the Fees for each On-site Visit at the end of the On-site Visit and you must pay those Fees to us at the end of the On-site Visit ("the Due Date").</li>
+          <li>Any other amounts payable under these Terms and Conditions, including Cancellation Fees, will be payable immediately upon issuance of our invoice.</li>
+          <li>Depending upon whether any further services or work may be required to be carried out by us following out diagnosis of the problem </li>
+          <li>described by you or any Products you may order to be supplied to you, we may require a deposit to be paid by you on account of any additional 
+            service cost we may reasonably incur or on account of the Product Fees.</li>
+          <li>Payment must be made in cash, EFTPOS, approved credit card or internet banking. If using internet banking, you must provide us a printed 
+            copy of the confirmation of payment printed from your internet banking screen at the completion of the On-site Visit.</li>
+            <li>If you do not pay on time, you must pay interest to us at the rate of 25% per annum from the Due Date until the date payment is received 
+              by us in full and you must pay any additional administration and debt collection costs (including legal costs).</li>
+            <li>If your account is in default, we may cease work on any matter for you until the default is remedied.</li>
+            <li>Without prejudice to any other right or remedy we may have against you, if you fail to make payment of any monies due to us on the Due 
+              Date in respect of any work or installation we may have carried out on your computer while in our possession, you accept that we may at our 
+              discretion retain a worker’s lien over your computer which we have worked on, pursuant to the provisions of the Wages Protection and Contractors 
+              Liens Repeal Act 1987 until payment is made by you.</li>
+              IMPORTANT NOTICE:
+            <li>You acknowledge and agree that if you have ordered Products comprising software by electronic delivery and that software has been 
+              installed by us and the software licence is activated either on your computer or a computer you have agree to purchase, then it is not 
+              reasonably practicable to remove the software installation or de-activate the software. In that event and for that reason once you have 
+              ordered the software with the instruction to proceed with installation, you agree that you shall be committed to that purchase of the 
+              software and subject to these Terms and conditions and the software cannot be returned unless we agree otherwise pursuant to a specific 
+              individual agreement made with you by us at our discretion, within seven days of invoice.</li>
+            <li>Once you have confirmed your order with us for the supply of any Products, then unless we are unable to supply such Products upon 
+              the terms specified, you will be committed to the purchase of those Products and have no right of cancellation or refund of monies paid 
+              but subject at all times to these Terms and Conditions and your rights under the Consumer Guarantees Act 1993 and the Fair Trading Act 1986, 
+              if applicable, unless we agree otherwise pursuant to a specific individual agreement made with you by us at our discretion, within seven 
+              days of invoice. We reserve the right in any such specific individual agreement to claim recovery of the reasonable administration and 
+              other cost we have incurred.</li>
+        </ol> 
+
+
+<!-- 
+        No liability
+        Press F1 for Help can accept no liability in any circumstances while undertaking any work on behalf of the client.
+        All care 
+
+        INSPECTION FEES
+        Service Inspections incur a non-refundable fee to be paid prior to starting. It covers time spent 
+        to disassemble, diagnose and assess the problem in order to ascertain a cause and pathway to resolution.
+        
+        SOFTWARE COVER
+        Virus/Trojans/Spyware/Adware/Fake ware/Updates/Applications Changes/Cache/Script affects/Process 
+        conflicts that damage or change an Operating System or Software environment are not covered under any warranty. 
+        biztek agrees to take all reasonable measures to protect a Client’s computer system from computer Viruses, Spyware & Adware. 
+        The Client assumes all risk for computer Viruses, Spyware & Adware and will not hold biztek responsible. The Client is 
+        responsible for the costs of consulting time and materials required to remove any computer Viruses, Spyware or Adware.
+        
+        SOFTWARE PROGRAMS
+        Changing the working environment may impact on software efficiency. Using other applications like Microsoft Outlook 
+        may not work due to a different network setup/layout whether dial up, high-speed or wireless.
+        
+        CLARITY 
+        The clarity of details provided to the technicians at biztek will influence the speed of diagnosis and repair. 
+        Please ensure notes provided are clear and concise. Problems not stated in the job notes cannot be diagnosed. 
+        If in doubt biztek will endeavor to seek clarification to avoid any misunderstanding.
+        
+        LIQUID DAMAGED
+        biztek can attempt to repair electronic products with liquid damage but there is NO WARRANTY on any liquid damage repairs.
+        
+        PERSONAL DATA & CONFIDENTIALITY
+        The Client assumes all risk of data loss from any and all causes or in any way related to or resulting from the repair 
+        or service of computer hardware, software or other equipment. The Client agrees to bear full responsibility 
+        for all data backup prior to any repair or service of computer hardware, software or other equipment by biztek. The Client 
+        hereby indemnifies biztek from any claim or liability related to data loss for any reason whatsoever. We will maintain as 
+        secret and confidential all information we obtain from you in providing the Services and will not use that information for 
+        any reason other than as necessary for providing the Services. This obligation will not apply to information that is in the 
+        public domain or that is known to us or obtained by us without breaching any obligation to you or that we are required to disclose by law.
+        
+        RISK
+        Despite the purchaser having possession of any hardware or software, ownership is retained by biztek until the client pays 
+        all money owed to biztek. Risk in any goods supplied shall pass to the client at the point of delivery.
+        
+        All QUOTES PROVIDED ARE ESTIMATES
+        Actual repair costs may differ from the quote. Should this situation arise biztek will advise you of any significant variations to the quote.
+        If in the unlikely event that the first repair fails, a second quote will be provided and initial repair costs will not apply.
+        
+        ITEMS HELD BY biztek
+        All items not claimed within 30 days once a quote is issued or a repair job is completed, will be recycled. At which point 
+        biztek is no longer liable to the client or any third party. Any bad debts will be passed to a debt collector. 
+        
+        TERMINATION 
+        We may immediately terminate the agreement for services if we consider:
+        (a) You are in breach of these Terms and Conditions;
+        (b) There is any threat to the safety of any of our staff or agents;
+        (c) There is presence of unlicensed or illegal software;
+        (d) Your equipment contains any pornographic, obscene, offensive or illegal content; or
+        (e) You are insolvent, bankrupt, in liquidation, unable to pay your debts, or otherwise an unacceptable credit risk.
+        (f) If we terminate our agreement we will cease services and all fees incurred up to that time will immediately become payable.
+        
+        LIMITED LIABILITY 
+        biztek will not be liable for (whether in contract, tort or negligence)
+        (1) Loss of profits or savings, loss of goodwill or opportunity, loss or corruption of data, or wasted staff time; or
+        (2) Loss, damage, cost or expense of any kind whatsoever which is indirect, consequential, or of a special nature, arising
+         directly or indirectly from any Services or Products supplied by us to you, even if we had been advised of the possibility 
+         of such loss, damage, cost or expense.
+        To the extent allowed by law, our total liability under any claim of any nature arising directly or indirectly from any 
+        Service or Product will not exceed the Fees paid by you for that Service or Product. You agree to indemnify us against any 
+        and all liability, losses, damages, costs and expenses of any nature whatsoever awarded against, incurred or suffered by us, whether direct or consequential, arising out of or resulting from your breach of clause.
+        biztek will not be liable for any losses of any kind or any delay in performing obligations caused by any natural disaster, 
+        flood or earthquake, strike, lockout, fire, war, civil commotion, network service failure, inability to obtain products or 
+        supplies including the imposition of any export or import bans, or any other cause beyond its reasonable control.
+        
+        CANCELLATION OF ON-SITES
+        The client is required to notify biztek of any cancellation a minimum of 4 hours ahead of the scheduled start time. Failure 
+        to provide such notice will result in the minimum callout fee being charged.
+        
+        WEBSITE DISCLAIMER
+        The information contained in this website is for general information purposes only. The information is provided by biztek 
+        and while we endeavour to keep the information up to date and correct, we make no representations or warranties of any kind, 
+        express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or 
+        the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such 
+        information is therefore strictly at your own risk
+        Through this website you are able to link to other websites which are not under the control of biztek. We have no control over 
+        the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or 
+        endorse the views expressed within them.
+        Every effort is made to keep the website up and running smoothly. However, biztek takes no responsibility for, and will not be 
+        liable for, the website being temporarily unavailable due to technical issues beyond our control.
+        
+        VARIATION
+        biztek will not be liable for any computers or accessories, including software that has been recommended to the purchaser by biztek. 
+        Should any fault arise, whether due to manufacturer quality issue, user fault or other, biztek will help the purchaser wherever 
+        they can. biztek reserves the right to modify and vary these terms and conditions at any time.
+        
+        
+      </p> -->
+     
+    </div>
+    <div class="w3-col m6">
+      6. CONFIDENTIALITY AND PRIVACY
+      <ol>
+        <li>We will maintain as secret and confidential all information we obtain from you in providing the Services and will not use that information 
+          for any reason other than as necessary for providing the Services. This obligation will not apply to information that is in the public domain 
+          or that is known to us or obtained by us without breaching any obligation to you or that we are required to disclose by law.</li>
+        <li>You authorise us to collect, retain, use and provide to our staff and agents any personal information ("Information") about you for the 
+          purposes of credit approval, meeting our obligations to you, marketing, and enforcing our rights against you.</li>
+      </ol>
+     
+      For full privacy policy see here <br>
+    
+      7. WARRANTY
+      <ol>
+        <li>We warrant that we will use reasonable skill and care in undertaking the Services.</li>
+        <li>No warranty is given for the Products where any failure or defect results from:
+          <p>(a) improper storage or handling of the Products by you, your employees, agents or customers;</p>
+          <p>(b) use, installation, modification or alteration (including repair) of the Products other than as recommended or authorised in writing 
+            by the manufacturer or us;</p>
+          <p>(c) fair wear and tear on the Products;</p>
+          <p>(d) failure to maintain the Products in accordance with any care or maintenance instructions provided by us or the manufacturer; or</p>
+          <p>(e) any other matter or event specified in relation to a specific Product as invalidating or being excluded from any warranty.</p>
+        </li>
+        <li>Except as otherwise provided in the Consumer Guarantees Act 1993 and the Fair Trading Act and subject to clause 8.1 of these terms and conditions 
+          your sole remedy in relation to the breach of any warranty under this agreement or at law, in relation to any:
+        <p>(a) Service, will be for us to re-perform such Services to the required standard; or</p>
+        <p>(b) Product, will be for us to repair or replace such Product, at our option, provided that if neither option is available to us (as determined solely by us) 
+          we may refund the price paid for that Product.</p>
+        </li>
+        <li>We have no obligation to install, customise or provide any other Service in relation to any Products repaired or replaced due to a breach of any Product warranty.</li>
+        <li>You acknowledge that if the Services or Products are supplied for business purposes in terms of the Consumer Guarantees Act 1993 the guarantees 
+          provided under that Act do not apply.</li>
+        <li>Other than the warranties set out in these Terms and Conditions, all other express or implied warranties in respect of the Services and Products 
+          are excluded to the fullest extent permitted by law including, but not limited to, implied warranties of merchantability or fitness for a particular purpose. 
+          All statements, technical information and recommendations made by the manufacturer and/or us about the Services or Products are believed to be reliable, 
+          but do not constitute a guarantee or warranty express or implied by us to you.</li>
+          <li>You warrant that you are authorised to arrange each On-site Visit and, in providing the Services or Products, our access to your premises, use of the equipment, 
+            software, information or other material made available by you will not breach any third party rights.</li>
+          <li>Your Rights under the Consumer Guarantees Act</li>
+          <li>Your rights and remedies under the Geeks On Wheels 2-year warranty go over and over and above the Consumer Guarantees Act 1993 (CGA).
+      
+            Under the CGA:
+            
+            All Products Must:
+            
+            – be of acceptable quality (durable, safe, ft for purpose, free from defects, acceptable in look or finish)
+            – be fit for any particular purpose you have told the supplier
+            – match a description, sample or model shown to you
+            – have good legal title, e.g. be able to be sold and not have any security interests registered against them
+            – be a reasonable price if no price is set
+            – arrive on time (within a reasonable time if not agreed) and in good condition
+            – have spare parts and repair facilities available (manufacturer is responsible). This does not apply if you are told about limited availability before you buy.
+            
+            If these guarantees are not met, the supplier must remedy the issue by either repair, replacement, or if neither are possible, then a refund of the purchase price.
+            
+            CGA Act 1993 http://www.legislation.govt.nz/act/public/1993/0091/latest/DLM311053.html</li>
+      </ol>
+     
+      8. LIABILITY
+      <ol>
+        <li>The Consumer Guarantees Act 1993, the Fair trading Act 1986 and any other statutes may apply warranties and conditions or impose obligations 
+          upon us which cannot by law (or which can only apply to a limited extent by law) be excluded or modified. In respect of any such implied warranties, 
+          conditions or terms imposed on us, our liability shall, where it is allowed, be excluded or if not able to be excluded, only apply to the lesser of the 
+          minimum extent required by the relevant statute or the fees paid under invoice for the Products or Services.</li>
+        <li>Except as otherwise provided in clause 8.1 in no event will we be liable (whether in contract, tort including negligence or otherwise) to you for:
+          <p>(a) loss of profits or savings, loss of goodwill or opportunity, loss or corruption of data, or wasted staff time; or</p>
+          <p>(b) loss, damage, cost or expense of any kind whatsoever which is indirect, consequential, or of a special nature, arising directly or 
+            indirectly from any Services or Products supplied by us to you, even if we had been advised of the possibility of such loss, damage, cost or expense.</p>
+        </li>
+        <li>To the extent allowed by law, our total liability under any claim of any nature arising directly or indirectly from any Service or Product 
+          will not exceed the Fees paid by you for that Service or Product.</li>
+        <li>You indemnify us together with our officers, directors, agents, advisors and employees against any and all liability, losses, damages, costs, 
+          penalties and expenses of any nature whatsoever awarded against, incurred or suffered by us, or our officers, directors, agents, advisors and employees 
+          whether direct or consequential, arising out of or resulting from your breach of clause 7.7.</li>
+      </ol>
+    
+      9. TERMINATION
+      <ol>
+        <li>We may immediately terminate the agreement between us if we consider:
+          <p>(a) you are in breach of these Terms and Conditions;</p>
+          <p>(b) there is any threat to the safety of any of our staff or agents;</p>
+          <p>(c) there to be the presence of unlicensed or illegal software;</p>
+          <p>(d) your equipment contains any pornographic, obscene, offensive or illegal content; or</p>
+          <p>(e) you are insolvent, bankrupt, in liquidation, unable to pay your debts, or otherwise an unacceptable credit risk to us.</p>
+        </li>
+        <li>If we terminate our agreement we will cease to undertake the Services and all Fees incurred up to that time will immediately become payable.</li>
+       
+      </ol>
+      10. GENERAL
+      <ol>
+        <li>We will not be liable to you for any breach or delay or failure to perform any of our obligations where such breach or delay or failure is 
+          caused by anything beyond our reasonable control, including (without limitation) inability to obtain supplies, war, civil commotion, terrorism, 
+          strike, lockout, other industrial act, weather phenomena or other act of God (including any failure by any of our suppliers to supply on time).</li>
+        <li>The current Terms and Conditions at any time are available on this website: www.pressF1forHelp.co.nz</li>
+        <li>New Zealand law governs the formation, validity, construction and performance of these Terms and Conditions.
+        </li>
+        <li>These Terms and Conditions shall be binding on your legal representation, assignees and successors.</li>
+        <li>If any provision of these Terms and Conditions shall be invalid, void, illegal or unenforceable, the validity, existence, legality and 
+          enforceability of the remaining provisions shall not be affected, prejudiced or impaired.</li>
+        <li>No failure or delay on our part in exercising any power or right under these Terms and Conditions will operate as a waiver.</li>
+      </ol>
+     
+
+      <!-- <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">Contact</h3>
+  <p class="w3-center w3-large">Want some help? get in touch! Phone or send a message:</p>
+  <div class="w3-center" style="margin-top:48px">
+    <p><i class="material-symbols-outlined  w3-margin-right">phone</i> Phone: 0210 469 492  Craig</p>
+    <p><i class="material-symbols-outlined  w3-margin-right">email</i> Email: pressF1forHelp@hotmail.com</p>
+    <p><i class="material-symbols-outlined  w3-margin-right">location_on</i>105A Carnoustie Drive, Wattle Downs, Auckland 2103</p>
+    <br>
+    <div  class="w3-center mapdiv">
+      <div id="mapdiv"></div>
+    </div>
+    
+    <script>
+
+    </script>
+    <!-- <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form> -->
+    <!-- Image of location/map -->
+    <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px"> -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey">To the top</a>
+  <!-- <i class="fa fa-arrow-up w3-margin-right"></i> <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div> -->
+  <p>Web Site built in-house and uses templates by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a> </p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+
+      map = new OpenLayers.Map("mapdiv");
+      map.addLayer(new OpenLayers.Layer.OSM());
+      
+      var lonLat = new OpenLayers.LonLat(174.8865236,-37.0546424) // 174.8865075, -37.0547972 )
+            .transform(
+              new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+              map.getProjectionObject() // to Spherical Mercator Projection
+            );
+            
+      var zoom=16;
+  
+      var markers = new OpenLayers.Layer.Markers( "Markers" );
+      map.addLayer(markers);
+      
+      markers.addMarker(new OpenLayers.Marker(lonLat));
+      
+      map.setCenter (lonLat, zoom);
+
+</script>
+
+</body>
+</html>

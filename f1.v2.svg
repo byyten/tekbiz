@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16.789204mm"
+   height="15.927319mm"
+   viewBox="0 0 16.789204 15.927319"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="true"
+     showgrid="true"
+     inkscape:export-bgcolor="#ffffff00">
+    <sodipodi:guide
+       position="-114.5663,232.95426"
+       orientation="0,-1"
+       id="guide1"
+       inkscape:locked="false" />
+    <inkscape:grid
+       id="grid2"
+       units="mm"
+       originx="-150.00173"
+       originy="-8.6516744"
+       spacingx="0.99999998"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-150.00173,-8.651674)">
+    <g
+       id="g5"
+       transform="matrix(0.10637012,0,0,0.10637012,146.79708,3.076665)">
+      <text
+         xml:space="preserve"
+         style="font-size:108.805px;fill:#000000;stroke:#000000;stroke-width:5.02473;stroke-dasharray:none;stroke-opacity:1"
+         x="55.776531"
+         y="168.46443"
+         id="text2"><tspan
+           id="tspan2"
+           style="font-size:108.805px;stroke:#000000;stroke-width:5.02473;stroke-dasharray:none;stroke-opacity:1"
+           x="55.776531"
+           y="168.46443"
+           sodipodi:role="line">F1</tspan></text>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:14.691;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2"
+         width="143.14665"
+         height="131.82195"
+         x="37.472794"
+         y="59.756927" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:15;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 146.12546,166.21771 v 27.03321"
+         id="path2" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:15;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 71.15708,168.91167 v 27.03321"
+         id="path2-0" />
+      <path
+         style="fill:none;stroke:#fefefe;stroke-width:22.1939;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 138.39366,191.04936 H 79.212846"
+         id="path2-0-7" />
+    </g>
+  </g>
+</svg>
