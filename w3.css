@@ -234,14 +234,15 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
-span { display: inline-block; min-width: 5rem; }
+span { display: inline-block;  } 
+/* min-width: 5rem; */
 .w3-span-wide { width: 20rem }
 .w3-span-col { width: 8rem }
-.olMap {
-    width: 50%;
-    height: 300px;
-}
-.mapdiv {
-    display: flex;
-    justify-content: center;
-  }
+.olMap {width: 50%;height: 300px;}
+.mapdiv {display: flex;justify-content: center;}
+.demodots { height: 1.25rem }
+
+.title { display:flex; align-items: center; padding-left: 1rem}
+
+img.logo, .geninfo { margin-right: 1.6rem ;}
+
